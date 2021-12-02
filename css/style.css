@@ -1,0 +1,11 @@
+.gallery {
+  max-width: 40rem;
+  margin: 1rem auto;
+}
+.thumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.thumbnail {
+  width: 33.33%
+}
