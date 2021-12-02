@@ -3,14 +3,17 @@ const t1 = document.querySelector(`#thumb1`)
 const t2 = document.querySelector(`#thumb2`)
 const t3 = document.querySelector(`#thumb3`)
 
-// Recieves a url string, assigns it to the src of the large image
-const setLargeImgSrc = function(thumb) {
-  const url = thumb.getAttribute(`src`)
-  lg.setAttribute(`src`, url)
-}
 
+// Get the url string from the target, assigns it to the src of the large image
 const handleThumbClick = function(event) {
-  setLargeImgSrc(event.target)
+  // Element that was clicked
+  const thumb = event.target
+
+  // The src url from the element
+  const url = thumb.getAttribute(`src`)
+
+  // Assign the strin to the large image
+  lg.setAttribute(`src`, url)
 }
 
 
