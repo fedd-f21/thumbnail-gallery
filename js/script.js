@@ -9,15 +9,12 @@ const setLargeImgSrc = function(thumb) {
   lg.setAttribute(`src`, url)
 }
 
+const handleThumbClick = function(event) {
+  setLargeImgSrc(event.target)
+}
+
+
 // Add listeners to each thumbnail one by one
-t1.addEventListener(`click`, function() {
-  setLargeImgSrc(t1)
-})
-
-t2.addEventListener(`click`, function() {
-  setLargeImgSrc(t2)
-})
-
-t3.addEventListener(`click`, function() {
-  setLargeImgSrc(t3)
-})
+t1.addEventListener(`click`, handleThumbClick)
+t2.addEventListener(`click`, handleThumbClick)
+t3.addEventListener(`click`, handleThumbClick)
