@@ -4,13 +4,16 @@ const t2 = document.querySelector(`#thumb2`)
 const t3 = document.querySelector(`#thumb3`)
 
 t1.addEventListener(`click`, function() {
-  lg.setAttribute(`src`, `img/one.jpg`)
+  const url = t1.getAttribute(`src`)
+  lg.setAttribute(`src`, url)
 })
 
 t2.addEventListener(`click`, function() {
-  lg.setAttribute(`src`, `img/two.jpg`)
+  const url = t2.getAttribute(`src`)
+  lg.setAttribute(`src`, url)
 })
 
 t3.addEventListener(`click`, function() {
-  lg.setAttribute(`src`, `img/three.jpg`)
+  const url = t3.getAttribute(`src`)
+  lg.setAttribute(`src`, url)
 })
