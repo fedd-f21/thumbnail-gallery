@@ -12,8 +12,12 @@ const handleThumbClick = function(event) {
   // The src url from the element
   const url = thumb.getAttribute(`src`)
 
-  // Assign the strin to the large image
+  // Assign the string to the large image
   lg.setAttribute(`src`, url)
+
+
+  // The same as the above 3 lines, as one line of code
+  // lg.setAttribute(`src`, event.target.getAttribute(`src`))
 }
 
 
